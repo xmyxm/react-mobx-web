@@ -41,7 +41,9 @@ config.devServer = {
     hot: true,//启用 webpack 的模块热替换特性
     host: 'localhost',//指定使用一个 host。默认是 localhost。如果你希望服务器外部可访问，指定为ip
     stats: { colors: true },// 用颜色标识
-    port: 3000 // 如果是小于1000的端口号，是需要sudo权限的，启用方式 sudo node server.js即可(可使用默认80端口)
+    port: 3000, // 如果是小于1000的端口号，是需要sudo权限的，启用方式 sudo node server.js即可(可使用默认80端口)
+    open: true, // 启用自动打开浏览器
+    openPage: "./" // 指定打开浏览器时要导航到的页面
 }
 
 module.exports = config;

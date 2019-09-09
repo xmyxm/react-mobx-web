@@ -1,6 +1,5 @@
 const WebpackDevServer = require('webpack-dev-server');
 const webpack = require('webpack');
-const open = require('open');
 const config = require('./webpack/webpack.beta.config');
 const port =  config.devServer.port;
 const host = config.devServer.host;
@@ -17,5 +16,4 @@ server.listen(port, host, (err)=>{
 	if(err){
 		console.log('启动出错：' + err);
 	}
-	open('http://' + host + ':' + port + '/index.html');
 });

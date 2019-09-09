@@ -8,7 +8,7 @@ const packageFilePath = path.join(__dirname, '../dist');
 
 module.exports = {
     entry: {
-        index: ['./src/page/index.js']
+        index: ['./src/app.js']
     },
     output: {
         path: packageFilePath,

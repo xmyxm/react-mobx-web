@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
 import Header from "../component/header/index"
+import Clock from "../component/clock"
 import "../style/index.less";
 
 export default class Index extends Component {
@@ -10,8 +10,11 @@ export default class Index extends Component {
             <React.Fragment>
                 <Header title="react&mobx"></Header>
                 <div className="index-page">
-                    <div className="icon-max"></div>
-                    <div className="describe">mobx学习</div>
+                    <div className="title">
+                        <div className="icon"></div>
+                        状态管理之Mobx
+                    </div>
+                    <Clock/>
                     <div className="info">
                         方案介绍：
                         <p>react</p>
@@ -23,5 +26,3 @@ export default class Index extends Component {
         );
     }
 }
-
-ReactDOM.render(<Index></Index>, document.querySelector("#main"))
